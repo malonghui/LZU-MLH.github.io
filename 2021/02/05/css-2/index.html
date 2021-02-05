@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="创建博客及其他的一些心得, 月下轻云风景夜">
+    <meta name="keywords" content="CSS_2, 月下轻云风景夜">
     <meta name="description" content="记录每一天">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>创建博客及其他的一些心得 | 月下轻云风景夜</title>
+    <title>CSS_2 | 月下轻云风景夜</title>
     <link rel="icon" type="image/png" href="/BlackCat.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">创建博客及其他的一些心得</h1>
+                    <h1 class="description center-align post-title">CSS_2</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%97%A5%E5%B8%B8/">
-                                <span class="chip bg-color">日常</span>
+                            <a href="/tags/CSS/">
+                                <span class="chip bg-color">CSS</span>
                             </a>
                         
-                            <a href="/tags/%E5%BF%83%E5%BE%97/">
-                                <span class="chip bg-color">心得</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
                     </div>
@@ -447,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category">
-                                日常
+                            <a href="/categories/CSS/" class="post-category">
+                                CSS
                             </a>
                         
                     </div>
@@ -460,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-03
+                    2021-02-05
                 </div>
                 
 
@@ -469,14 +469,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    481
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    7 分
                 </div>
                 
 
@@ -499,25 +499,248 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="为什么搭建个人博客"><a href="#为什么搭建个人博客" class="headerlink" title="为什么搭建个人博客"></a>为什么搭建个人博客</h1><p>​        其实搭建一个个人博客这件事，我早有所打算了，在大一查阅各种算法题解时，基本都是到博客去的。当然，看知乎时也会看到各路大佬介绍一定要有自己的博客，学校里的学长再给我们讲解之余也会提到这件事，大一期间也曾经在CSDN上尝试写自己的博客，不过当时不懂Markdown语法，也不想学，故就此放弃了……(￣、￣)</p>
-<p>​        这次寒假，我能够搭建自己的博客。主要有几个方面的原因：</p>
-<ul>
-<li>在学校考完试还没回家的那一周在<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1jE411n7KJ?from=search&seid=4760389398593987442">B站教程</a>学习了Markdown语法，并对<a target="_blank" rel="noopener" href="https://www.typora.io/">Typora</a>的使用有了基本了解</li>
-<li>颓废了半个月，感觉不能再这样下去了，得学习起来了(ﾉ*･ω･)ﾉ</li>
+                <h1 id="CSS-2"><a href="#CSS-2" class="headerlink" title="CSS_2"></a>CSS_2</h1><h2 id="1-Emmet语法"><a href="#1-Emmet语法" class="headerlink" title="$1 Emmet语法"></a>$1 Emmet语法</h2><p>​    Emmet语法的前身是Zen Coding，它使用缩写，来提高Html/CSS的编写速度，VScode内部已经集成该语法。</p>
+<h3 id="1-1-生成Html结构语法"><a href="#1-1-生成Html结构语法" class="headerlink" title="$1.1 生成Html结构语法"></a>$1.1 生成Html结构语法</h3><ul>
+<li><p>生成标签：<code>div</code> + <code>tab键</code></p>
+</li>
+<li><p>生成多个标签：<code>div*10</code> + <code>tab键</code></p>
+</li>
+<li><p>生成父子级关系的标签：<code>ul&gt;li</code> + <code>tab键</code>，<code>div&gt;span</code> + <code>tab键</code></p>
+</li>
+<li><p>生成兄弟关系：<code>div+p</code> + <code>tab键</code></p>
+</li>
+<li><p>生成带类名或者id名标签：</p>
+<p>​    <code>p.one</code> + <code>tab键</code> &lt;=&gt; <code>&lt;p class=&quot;one&quot;&gt;&lt;/p&gt;</code></p>
+<p>​    <code>.two</code> + <code>tab键</code>&lt;=&gt;<code>&lt;div class=&quot;two&quot;&gt;&lt;/div&gt;</code></p>
+<p>​    <code>ul&gt;li#three</code> + <code>tab键</code>&lt;=&gt;<code>&lt;ul&gt;&lt;li id=&quot;three&quot;&gt;&lt;/li&gt;&lt;/ul&gt;</code></p>
+</li>
+<li><p>生成顺序类标签：</p>
+<p><code>.demo$*2</code> + <code>tab键</code>&lt;=&gt;<code>&lt;div class=&quot;demo1&quot;&gt;&lt;/div&gt; &lt;div class=&quot;demo2&quot;&gt;&lt;/div&gt;</code></p>
+</li>
+<li><p>带默认文字：</p>
+<p><code>div&#123;乐饮过三觉&#125;</code>&lt;=&gt;<code>&lt;div&gt;乐饮过三觉&lt;/div&gt;</code></p>
+</li>
 </ul>
-<p>​        因此，我也终于决定要搞一个自己的博客，最后上网查到使用<code>Hexo</code>+<code>Github</code>的方法，在查阅了众多网站的教程后(B站，知乎，博客都看了)，最终我选择了参考这个博客：</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://sunhwee.com/posts/6e8839eb.html#toc-heading-4">Hexo+Github博客搭建完全教程</a></p>
-</blockquote>
-<p>​        虽然有教程，当然还是遇到了很多问题，当然最后都一一解决了，希望你在看完这篇博客后，也能够创建自己的博客，加油！</p>
-<hr>
-<h1 id="寒假学习"><a href="#寒假学习" class="headerlink" title="寒假学习"></a>寒假学习</h1><p>​        说实话，寒假已经过去的半个月，我基本就没有学一点东西，一直在看动漫(ノへ￣、)，这几天终于看不下去了决定学点东西吧，以下是一些考虑内容：</p>
-<ul>
-<li><input disabled type="checkbox"> Html + CSS + JavaScript</li>
-<li><input disabled type="checkbox"> 《网络是怎样连接的》看完 <del>(毕竟回家只带了这一本书…)</del></li>
-<li><input disabled type="checkbox"> 有时间的话再把算法看看吧，为蓝桥杯做准备</li>
+<h3 id="1-2-生成CSS样式语法"><a href="#1-2-生成CSS样式语法" class="headerlink" title="$1.2 生成CSS样式语法"></a>$1.2 生成CSS样式语法</h3><ul>
+<li><code>w100</code>&lt;=&gt;<code>weight: 100px;</code></li>
+<li><code>ti2em</code>&lt;=&gt;<code>text-indent: 2em;</code></li>
+<li><code>tac</code>&lt;=&gt;<code>text-align: center;</code></li>
 </ul>
-<p>​        差不多就是这样吧，毕竟还有一个月，时间还很充足，希望你也能好好利用自己的寒假时光，加油！</p>
+<h3 id="1-3-快速格式化代码"><a href="#1-3-快速格式化代码" class="headerlink" title="$1.3 快速格式化代码"></a>$1.3 快速格式化代码</h3><p>VScode中：<code>Shift</code> + <code>Alt</code> + <code>F</code></p>
+<h2 id="2-复合选择器"><a href="#2-复合选择器" class="headerlink" title="$2 复合选择器"></a>$2 复合选择器</h2><ul>
+<li>更准确，更高效的选择目标元素</li>
+<li>由两个或者多个基础选择器，通过不同方式组合而成</li>
+<li>常用的复合选择器：后代选择器，子选择器，并集选择器，伪类选择器</li>
+</ul>
+<h3 id="2-1-后代选择器🔴"><a href="#2-1-后代选择器🔴" class="headerlink" title="$2.1 后代选择器🔴"></a>$2.1 后代选择器🔴</h3><ul>
+<li>语法：<code>元素1 元素2 ...&#123;样式声明&#125;</code>，例：<code>ul li &#123;color: red;&#125;</code>，表示选择<code>ul</code>里面的所有<code>li</code>标签，不论辈分</li>
+<li>注意点：<ul>
+<li>元素之间空格相隔</li>
+<li>元素1是父级，元素2是子级，最终选择的是元素2</li>
+<li>元素2和以后的元素可以是儿子或孙子，只要是元素1的后代即可</li>
+<li>元素可以是任意基础选择器</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-子选择器"><a href="#2-2-子选择器" class="headerlink" title="$2.2 子选择器"></a>$2.2 子选择器</h3><ul>
+<li><p>语法：<code>元素1&gt;元素2 &#123;样式声明&#125;</code>，例如：<code>div &gt; p &#123;color: red;&#125;</code></p>
+</li>
+<li><p>注意点：</p>
+<ul>
+<li>元素之间大于号间隔</li>
+<li>元素1是父级，元素2是子级，最终选择的是元素2</li>
+<li>元素2必须是亲儿子</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-3-并集选择器"><a href="#2-3-并集选择器" class="headerlink" title="$2.3 并集选择器"></a>$2.3 并集选择器</h3><ul>
+<li>语法：<code>元素1,元素2,... &#123;样式声明&#125;</code>，例如：<code>div, p &#123;color: red;&#125;</code></li>
+<li>注意点：<ul>
+<li>选择多级标签，让他们有相同样式，中间以逗号分隔，最后一个选择器不需要逗号</li>
+<li>元素可以是任意选择器，不限于基础选择器</li>
+<li>语法规范一般为逗号之后换行</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-4-链接伪类选择器"><a href="#2-4-链接伪类选择器" class="headerlink" title="$2.4 链接伪类选择器"></a>$2.4 链接伪类选择器</h3><ul>
+<li><p>语法：<code>元素:效果 &#123;样式声明&#125;</code>，例如：<code>a:hover &#123;color: red;&#125;</code></p>
+<ul>
+<li><code>a:link</code>：选择所有未被访问链接</li>
+<li><code>a:visited</code>：选择所有已经被访问的链接</li>
+<li><code>a:hover</code>：鼠标覆盖链接时的效果</li>
+<li><code>a:active</code>：选择活动的链接 </li>
+</ul>
+</li>
+<li><p>实际开发中一般按照LVHA的顺序书写</p>
+</li>
+<li><p>一般只需要写<code>a</code>和<code>a:hover</code></p>
+</li>
+</ul>
+<h3 id="2-5-focus伪类选择器"><a href="#2-5-focus伪类选择器" class="headerlink" title="$2.5 focus伪类选择器"></a>$2.5 focus伪类选择器</h3><ul>
+<li><p>语法：<code>元素:效果 &#123;样式声明&#125;</code>，例如，<code>input:focus &#123;样式声明&#125;</code></p>
+</li>
+<li><p>主要针对<code>&lt;input&gt;</code>表单元素</p>
+</li>
+</ul>
+<h2 id="3-元素显示模式"><a href="#3-元素显示模式" class="headerlink" title="$3 元素显示模式"></a>$3 元素显示模式</h2><h3 id="3-1-基础知识"><a href="#3-1-基础知识" class="headerlink" title="$3.1 基础知识"></a>$3.1 基础知识</h3><ul>
+<li><p>元素显示模式就是<font color="red">元素(标签)以什么方式显示</font>。比如<code>&lt;div&gt;</code>独占一行，<code>&lt;span&gt;</code>不换行</p>
+</li>
+<li><p>Html元素一般分为<font color="red">块元素</font>和<font color="red">行内元素</font></p>
+</li>
+<li><p>块元素特点</p>
+<ul>
+<li>自己独占一行</li>
+<li>高度，宽度，内外边距都可以设置</li>
+<li>宽度默认是容器(父级宽度)的100%</li>
+<li>是一个容器及盒子，里面可以放行内元素或者块级元素</li>
+<li>文字类的元素，例如<code>&lt;p&gt;，&lt;h1&gt;</code>，内部不能使用块级元素</li>
+</ul>
+</li>
+<li><p>行内元素：<code>&lt;a&gt;，&lt;strong&gt;， &lt;b&gt;</code>等</p>
+<ul>
+<li>相邻行内元素在一行上，一行可以显示若干行内元素</li>
+<li>高，宽直接设置无效</li>
+<li>默认宽度就是它本身内容的宽度</li>
+<li>行内元素只能容纳文本或其他行内元素</li>
+<li>注意点：<ul>
+<li>链接里面不能再放链接</li>
+<li>特殊情况<code>&lt;a&gt;</code>内可以放块级元素，但是需要转化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>行内块元素：<code>&lt;img&gt;，&lt;input&gt;，&lt;td&gt;</code>等</p>
+<ul>
+<li>一行可显示多个行内块元素，但之间会有空袭（行内元素特点）</li>
+<li>默认宽度就是它本身内容的宽度（行内元素特点）</li>
+<li>高度，行高，内外边距都可以控制（块级元素特点）</li>
+</ul>
+</li>
+</ul>
+<p><img src="/.io//%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F.png"></p>
+<h3 id="3-2-显示模式的转化"><a href="#3-2-显示模式的转化" class="headerlink" title="$3.2 显示模式的转化"></a>$3.2 显示模式的转化</h3><ul>
+<li><p>🔴行内元素转化为块级元素：增加链接<code>&lt;a&gt;</code>的触发范围</p>
+</li>
+<li><p>块级元素转化为行内元素</p>
+</li>
+<li><p>🔴行内元素转化为行内块元素</p>
+<pre class="line-numbers language-Html" data-language="Html"><code class="language-Html">&lt;style&gt;
+    a &#123;
+        width: 150px;
+        height: 50px;
+        display: block;
+    &#125;
+    div &#123;
+        display: inline;
+    &#125;
+    span &#123;
+        width: 150px;
+        height: 30px;
+        display: inline-block;
+    &#125;
+&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>小技巧：文字垂直居中：行高<code>ling-height</code> = 盒子高度，偏小则文字偏上，偏大则文字偏下</p>
+</li>
+</ul>
+<h2 id="4-CSS的背景"><a href="#4-CSS的背景" class="headerlink" title="$4 CSS的背景"></a>$4 CSS的背景</h2><h3 id="4-1-背景颜色"><a href="#4-1-背景颜色" class="headerlink" title="$4.1 背景颜色"></a>$4.1 背景颜色</h3><p>​    <code>background-color</code>：默认为<code>transparent</code>透明，可以指定颜色，指定类型参考CSS_1的文本颜色三种类型。</p>
+<h3 id="4-2-背景图片"><a href="#4-2-背景图片" class="headerlink" title="$4.2 背景图片"></a>$4.2 背景图片</h3><p>​    <code>background-image:url() | none</code></p>
+<ul>
+<li>常见于Logo，一些装饰性的小图片，超大的北京图片，优点是便于控制位置</li>
+</ul>
+<h3 id="4-3-背景平铺"><a href="#4-3-背景平铺" class="headerlink" title="$4.3 背景平铺"></a>$4.3 背景平铺</h3><p>​    <code>background-repeat:no-repeat | repeat | repeat-x | repeat-y</code></p>
+<ul>
+<li>默认<code>repeat</code></li>
+</ul>
+<h3 id="4-4-背景图片位置"><a href="#4-4-背景图片位置" class="headerlink" title="$4.4 背景图片位置"></a>$4.4 背景图片位置</h3><p>​    <code>background-position: x y;</code> </p>
+<p>​    x和y可以使用方位名词或者精确单位</p>
+<ul>
+<li>方位名词：<code>top</code>,<code>bottom</code>,<code>center</code>和<code>left</code>,<code>right</code>,<code>center</code><ul>
+<li>如果指定了两个，则前后顺序无关</li>
+<li>如果指定了一个，则第二个默认居中对齐</li>
+</ul>
+</li>
+<li>精确单位：x坐标和y坐标，顺序固定，单位为<code>px</code><ul>
+<li>如果只指定了一个，那么该数值一定是x坐标，另一个默认垂直居中</li>
+</ul>
+</li>
+<li>混合单位：x坐标和y坐标，顺序固定<ul>
+<li>例<code>background-position: 20px bottom;</code>,<code>background-position: center 40px;</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="4-5-背景图像固定"><a href="#4-5-背景图像固定" class="headerlink" title="$4.5 背景图像固定"></a>$4.5 背景图像固定</h3><p><code>background--attachment: scroll | fixed</code>，默认<code>scroll</code>，以后做滚动视差会用到</p>
+<h3 id="4-6-背景属性复合写法"><a href="#4-6-背景属性复合写法" class="headerlink" title="$4.6 背景属性复合写法"></a>$4.6 背景属性复合写法</h3><p>没有特定书写顺序，一般书写顺序：</p>
+<ul>
+<li><p>背景颜色，背景图片，背景平铺，背景图像滚动，背景图片位置</p>
+</li>
+<li><p>例：<code>background: pink url(a.png) no-repeat fixed center top;</code></p>
+</li>
+</ul>
+<h3 id="4-7-背景色半透明"><a href="#4-7-背景色半透明" class="headerlink" title="$4.7 背景色半透明"></a>$4.7 背景色半透明</h3><ul>
+<li><p><code>background: rgba(0, 0, 0, 0.3)</code>，<code>a=1</code>为不透明，</p>
+</li>
+<li><p><code>0.3</code>可以简写为<code>.3</code>，把0省略</p>
+</li>
+</ul>
+<h2 id="5-CSS三大特性"><a href="#5-CSS三大特性" class="headerlink" title="$5 CSS三大特性"></a>$5 CSS三大特性</h2><ul>
+<li>层叠性：相同的选择器设置相同的样式，此时一个样式会覆盖另一个样式，遵循就近原则(底层原则)<ul>
+<li>哪个样式离结构近，就执行哪个样式</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">div</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">/*最终结果：color: green，font-size: 18px;*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li><p>继承性：子类会继承父类的样式，例如根据上个代码块的样式：<code>&lt;div&gt;&lt;p&gt;我继承了div&lt;/p&gt;&lt;/div&gt;</code>，则<code>p</code>标签会有<code>color</code>和<code>font-size</code></p>
+<ul>
+<li><p>子类会继承<code>text-</code>,<code>font-</code>,<code>line</code>和<code>color</code>等</p>
+</li>
+<li><p>行高的继承：行高可以设置为<code>1.5</code>，表示当前文字大小的<code>1.5</code>倍。</p>
+</li>
+</ul>
+</li>
+<li><p>优先级： 当一个元素指定多个选择器，就会产生优先级</p>
+<ul>
+<li>选择器相同，执行层叠行</li>
+<li>选择器不同，根据<code>选择器权重</code>执行<ul>
+<li>权重由四位数字组成，不会有进位</li>
+<li>等级判断从左到右，如果某一位相同则判断下一位</li>
+<li>继承的权重为0</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/.io//%E9%80%89%E6%8B%A9%E5%99%A8%E6%9D%83%E9%87%8D.png"></p>
+<ul>
+<li><p>权重叠加</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+    <span class="token comment">/*权重: 0, 0, 0, 1*/</span>
+    <span class="token selector">li</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token comment">/*权重: 0, 0, 0, 2*/</span>
+    <span class="token selector">ul li</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token comment">/*权重: 0, 0, 1, 1*/</span>
+   	<span class="token selector">.nav li</span> <span class="token punctuation">&#123;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>哈哈<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+</ul>
 
                 
             </div>
@@ -544,7 +767,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lzu-mlh.github.io/2021/02/03/chuang-jian-bo-ke-ji-qi-ta-de-yi-xie-xin-de/">https://lzu-mlh.github.io/2021/02/03/chuang-jian-bo-ke-ji-qi-ta-de-yi-xie-xin-de/</a>
+                    <a href="https://lzu-mlh.github.io/2021/02/05/css-2/">https://lzu-mlh.github.io/2021/02/05/css-2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -582,12 +805,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%97%A5%E5%B8%B8/">
-                                    <span class="chip bg-color">日常</span>
+                                <a href="/tags/CSS/">
+                                    <span class="chip bg-color">CSS</span>
                                 </a>
                             
-                                <a href="/tags/%E5%BF%83%E5%BE%97/">
-                                    <span class="chip bg-color">心得</span>
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
                                 </a>
                             
                         </div>
@@ -633,29 +856,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/02/04/css-1/">
+                <a href="/2021/02/05/css-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="CSS_1">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="CSS_2">
                         
-                        <span class="card-title">CSS_1</span>
+                        <span class="card-title">CSS_2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CSS最基本的一些知识
+                            CSS进阶知识
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -668,6 +892,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -690,31 +915,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/02/03/html-xue-xi/">
+                <a href="/2021/02/04/css-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Html学习">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="CSS_1">
                         
-                        <span class="card-title">Html学习</span>
+                        <span class="card-title">CSS_1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Html的一些基础知识...
+                            CSS最基本的一些知识
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-04
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Html/" class="post-category">
-                                    Html
+                            <a href="/categories/CSS/" class="post-category">
+                                    CSS
                                 </a>
                             
                             
@@ -724,12 +949,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                        <span class="chip bg-color">前端</span>
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
                     </a>
                     
-                    <a href="/tags/Html/">
-                        <span class="chip bg-color">Html</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
                 </div>
