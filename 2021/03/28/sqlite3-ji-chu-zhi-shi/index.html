@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CSS_2, 月下轻云风静夜">
+    <meta name="keywords" content="Sqlite3基础知识, 月下轻云风静夜">
     <meta name="description" content="记录每一天">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CSS_2 | 月下轻云风静夜</title>
+    <title>Sqlite3基础知识 | 月下轻云风静夜</title>
     <link rel="icon" type="image/png" href="/BlackCat.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CSS_2</h1>
+                    <h1 class="description center-align post-title">Sqlite3基础知识</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +431,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/">
-                                <span class="chip bg-color"></span>
+                            <a href="/tags/Sqlite3/">
+                                <span class="chip bg-color">Sqlite3</span>
                             </a>
                         
-                            <a href="/">
-                                <span class="chip bg-color"></span>
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                <span class="chip bg-color">数据库</span>
                             </a>
                         
                     </div>
@@ -447,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/" class="post-category">
-                                
+                            <a href="/categories/Sqlite3/" class="post-category">
+                                Sqlite3
                             </a>
                         
                     </div>
@@ -460,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-05
+                    2021-03-27
                 </div>
                 
 
@@ -469,14 +469,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    586
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    2 分
                 </div>
                 
 
@@ -499,248 +499,92 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="CSS-2"><a href="#CSS-2" class="headerlink" title="CSS_2"></a>CSS_2</h1><h2 id="1-Emmet语法"><a href="#1-Emmet语法" class="headerlink" title="$1 Emmet语法"></a>$1 Emmet语法</h2><p>​    Emmet语法的前身是Zen Coding，它使用缩写，来提高Html/CSS的编写速度，VScode内部已经集成该语法。</p>
-<h3 id="1-1-生成Html结构语法"><a href="#1-1-生成Html结构语法" class="headerlink" title="$1.1 生成Html结构语法"></a>$1.1 生成Html结构语法</h3><ul>
-<li><p>生成标签：<code>div</code> + <code>tab键</code></p>
+                <h1 id="Sqlite3的安装与简单使用"><a href="#Sqlite3的安装与简单使用" class="headerlink" title="Sqlite3的安装与简单使用"></a>Sqlite3的安装与简单使用</h1><blockquote>
+<p>参考教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Vb411P7t3?from=search&seid=4747927781787980554">B站视频：【嵌入式】SQlite3数据库开发</a></p>
+</blockquote>
+<h2 id="1-Sqlite3的安装-Windows"><a href="#1-Sqlite3的安装-Windows" class="headerlink" title="1. Sqlite3的安装(Windows)"></a>1. Sqlite3的安装(Windows)</h2><ol>
+<li>在<a target="_blank" rel="noopener" href="https://www.sqlite.org/download.html">下载页面</a>下载<strong>sqlite-tools-win32-*.zip</strong> 和 <strong>sqlite-dll-win32-*.zip</strong>两个压缩包</li>
+<li>将其解压到一个文件夹中，然后将此文件夹<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/3c343ff7b21c530d37796385.html">添加为环境变量</a></li>
+<li>打开cmd，输入<code>sqlite3</code>，出现以下界面说明安装成功</li>
+</ol>
+<p><img src="/2021/03/28/sqlite3-ji-chu-zhi-shi/sqlite_open.png" alt="打开Sqlite3"></p>
+<h2 id="2-Sqlite3的简单使用"><a href="#2-Sqlite3的简单使用" class="headerlink" title="2. Sqlite3的简单使用"></a>2. Sqlite3的简单使用</h2><h3 id="2-1-sql命令"><a href="#2-1-sql命令" class="headerlink" title="$2.1 sql命令"></a>$2.1 sql命令</h3><blockquote>
+<ol>
+<li><p>基本的sql命令，不以<code>.</code>开头，但是都要以<code>;</code>结尾</p>
 </li>
-<li><p>生成多个标签：<code>div*10</code> + <code>tab键</code></p>
+<li><p>执行完语句后没有任何反应说明操作成功</p>
 </li>
-<li><p>生成父子级关系的标签：<code>ul&gt;li</code> + <code>tab键</code>，<code>div&gt;span</code> + <code>tab键</code></p>
+<li><p>若想把数据保存到数据库中，需要使用<code>sqlite3 数据库名.db</code>来创建一个数据库，否则数据无效</p>
 </li>
-<li><p>生成兄弟关系：<code>div+p</code> + <code>tab键</code></p>
-</li>
-<li><p>生成带类名或者id名标签：</p>
-<p>​    <code>p.one</code> + <code>tab键</code> &lt;=&gt; <code>&lt;p class=&quot;one&quot;&gt;&lt;/p&gt;</code></p>
-<p>​    <code>.two</code> + <code>tab键</code>&lt;=&gt;<code>&lt;div class=&quot;two&quot;&gt;&lt;/div&gt;</code></p>
-<p>​    <code>ul&gt;li#three</code> + <code>tab键</code>&lt;=&gt;<code>&lt;ul&gt;&lt;li id=&quot;three&quot;&gt;&lt;/li&gt;&lt;/ul&gt;</code></p>
-</li>
-<li><p>生成顺序类标签：</p>
-<p><code>.demo$*2</code> + <code>tab键</code>&lt;=&gt;<code>&lt;div class=&quot;demo1&quot;&gt;&lt;/div&gt; &lt;div class=&quot;demo2&quot;&gt;&lt;/div&gt;</code></p>
-</li>
-<li><p>带默认文字：</p>
-<p><code>div&#123;乐饮过三觉&#125;</code>&lt;=&gt;<code>&lt;div&gt;乐饮过三觉&lt;/div&gt;</code></p>
-</li>
-</ul>
-<h3 id="1-2-生成CSS样式语法"><a href="#1-2-生成CSS样式语法" class="headerlink" title="$1.2 生成CSS样式语法"></a>$1.2 生成CSS样式语法</h3><ul>
-<li><code>w100</code>&lt;=&gt;<code>weight: 100px;</code></li>
-<li><code>ti2em</code>&lt;=&gt;<code>text-indent: 2em;</code></li>
-<li><code>tac</code>&lt;=&gt;<code>text-align: center;</code></li>
-</ul>
-<h3 id="1-3-快速格式化代码"><a href="#1-3-快速格式化代码" class="headerlink" title="$1.3 快速格式化代码"></a>$1.3 快速格式化代码</h3><p>VScode中：<code>Shift</code> + <code>Alt</code> + <code>F</code></p>
-<h2 id="2-复合选择器"><a href="#2-复合选择器" class="headerlink" title="$2 复合选择器"></a>$2 复合选择器</h2><ul>
-<li>更准确，更高效的选择目标元素</li>
-<li>由两个或者多个基础选择器，通过不同方式组合而成</li>
-<li>常用的复合选择器：后代选择器，子选择器，并集选择器，伪类选择器</li>
-</ul>
-<h3 id="2-1-后代选择器🔴"><a href="#2-1-后代选择器🔴" class="headerlink" title="$2.1 后代选择器🔴"></a>$2.1 后代选择器🔴</h3><ul>
-<li>语法：<code>元素1 元素2 ...&#123;样式声明&#125;</code>，例：<code>ul li &#123;color: red;&#125;</code>，表示选择<code>ul</code>里面的所有<code>li</code>标签，不论辈分</li>
-<li>注意点：<ul>
-<li>元素之间空格相隔</li>
-<li>元素1是父级，元素2是子级，最终选择的是元素2</li>
-<li>元素2和以后的元素可以是儿子或孙子，只要是元素1的后代即可</li>
-<li>元素可以是任意基础选择器</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-2-子选择器"><a href="#2-2-子选择器" class="headerlink" title="$2.2 子选择器"></a>$2.2 子选择器</h3><ul>
-<li><p>语法：<code>元素1&gt;元素2 &#123;样式声明&#125;</code>，例如：<code>div &gt; p &#123;color: red;&#125;</code></p>
-</li>
-<li><p>注意点：</p>
+</ol>
+</blockquote>
+<p><img src="/2021/03/28/sqlite3-ji-chu-zhi-shi/sqlite_database.png" alt="连接数据库"></p>
 <ul>
-<li>元素之间大于号间隔</li>
-<li>元素1是父级，元素2是子级，最终选择的是元素2</li>
-<li>元素2必须是亲儿子</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-3-并集选择器"><a href="#2-3-并集选择器" class="headerlink" title="$2.3 并集选择器"></a>$2.3 并集选择器</h3><ul>
-<li>语法：<code>元素1,元素2,... &#123;样式声明&#125;</code>，例如：<code>div, p &#123;color: red;&#125;</code></li>
-<li>注意点：<ul>
-<li>选择多级标签，让他们有相同样式，中间以逗号分隔，最后一个选择器不需要逗号</li>
-<li>元素可以是任意选择器，不限于基础选择器</li>
-<li>语法规范一般为逗号之后换行</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-4-链接伪类选择器"><a href="#2-4-链接伪类选择器" class="headerlink" title="$2.4 链接伪类选择器"></a>$2.4 链接伪类选择器</h3><ul>
-<li><p>语法：<code>元素:效果 &#123;样式声明&#125;</code>，例如：<code>a:hover &#123;color: red;&#125;</code></p>
+<li><p>创建一个表单:</p>
+<p><img src="/2021/03/28/sqlite3-ji-chu-zhi-shi/sqlite_create_table.png" alt="创建一个表单"></p>
 <ul>
-<li><code>a:link</code>：选择所有未被访问链接</li>
-<li><code>a:visited</code>：选择所有已经被访问的链接</li>
-<li><code>a:hover</code>：鼠标覆盖链接时的效果</li>
-<li><code>a:active</code>：选择活动的链接 </li>
+<li><code>create table stu(id integar, name char, score integar);</code></li>
 </ul>
 </li>
-<li><p>实际开发中一般按照LVHA的顺序书写</p>
-</li>
-<li><p>一般只需要写<code>a</code>和<code>a:hover</code></p>
-</li>
-</ul>
-<h3 id="2-5-focus伪类选择器"><a href="#2-5-focus伪类选择器" class="headerlink" title="$2.5 focus伪类选择器"></a>$2.5 focus伪类选择器</h3><ul>
-<li><p>语法：<code>元素:效果 &#123;样式声明&#125;</code>，例如，<code>input:focus &#123;样式声明&#125;</code></p>
-</li>
-<li><p>主要针对<code>&lt;input&gt;</code>表单元素</p>
-</li>
-</ul>
-<h2 id="3-元素显示模式"><a href="#3-元素显示模式" class="headerlink" title="$3 元素显示模式"></a>$3 元素显示模式</h2><h3 id="3-1-基础知识"><a href="#3-1-基础知识" class="headerlink" title="$3.1 基础知识"></a>$3.1 基础知识</h3><ul>
-<li><p>元素显示模式就是<font color="red">元素(标签)以什么方式显示</font>。比如<code>&lt;div&gt;</code>独占一行，<code>&lt;span&gt;</code>不换行</p>
-</li>
-<li><p>Html元素一般分为<font color="red">块元素</font>和<font color="red">行内元素</font></p>
-</li>
-<li><p>块元素特点</p>
+<li><p>查看表的结构图</p>
 <ul>
-<li>自己独占一行</li>
-<li>高度，宽度，内外边距都可以设置</li>
-<li>宽度默认是容器(父级宽度)的100%</li>
-<li>是一个容器及盒子，里面可以放行内元素或者块级元素</li>
-<li>文字类的元素，例如<code>&lt;p&gt;，&lt;h1&gt;</code>，内部不能使用块级元素</li>
+<li><code>.schema stu</code></li>
 </ul>
 </li>
-<li><p>行内元素：<code>&lt;a&gt;，&lt;strong&gt;， &lt;b&gt;</code>等</p>
+<li><p>插入记录</p>
+<p><img src="/2021/03/28/sqlite3-ji-chu-zhi-shi/sqlite_insert.png" alt="插入一条记录"></p>
 <ul>
-<li>相邻行内元素在一行上，一行可以显示若干行内元素</li>
-<li>高，宽直接设置无效</li>
-<li>默认宽度就是它本身内容的宽度</li>
-<li>行内元素只能容纳文本或其他行内元素</li>
-<li>注意点：<ul>
-<li>链接里面不能再放链接</li>
-<li>特殊情况<code>&lt;a&gt;</code>内可以放块级元素，但是需要转化</li>
+<li>完整记录：<code>insert into stu values(1001, &#39;ZhangSan&#39;，80);</code></li>
+<li>部分记录：<code>insert into stu (id score)values(1002, 79)</code></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><p>行内块元素：<code>&lt;img&gt;，&lt;input&gt;，&lt;td&gt;</code>等</p>
+<li><p>查看表单内容</p>
+<p><img src="/2021/03/28/sqlite3-ji-chu-zhi-shi/sqlite_header.png" alt="显示表头"></p>
 <ul>
-<li>一行可显示多个行内块元素，但之间会有空袭（行内元素特点）</li>
-<li>默认宽度就是它本身内容的宽度（行内元素特点）</li>
-<li>高度，行高，内外边距都可以控制（块级元素特点）</li>
+<li>如果想打开显示表头，可使用<code>.head on</code>或者<code>.header on</code>命令</li>
+<li>查看完整字段：<code>select * from stu;</code></li>
+<li>查看部分字段：<code>select name,score from stu;</code></li>
+<li>指定条件：<code>select * from stu where score=80 and id=1001;</code></li>
 </ul>
 </li>
-</ul>
-<p><img src="/%E6%98%BE%E7%A4%BA%E6%A8%A1%E5%BC%8F-1612502065934.png"></p>
-<h3 id="3-2-显示模式的转化"><a href="#3-2-显示模式的转化" class="headerlink" title="$3.2 显示模式的转化"></a>$3.2 显示模式的转化</h3><ul>
-<li><p>🔴行内元素转化为块级元素：增加链接<code>&lt;a&gt;</code>的触发范围</p>
-</li>
-<li><p>块级元素转化为行内元素</p>
-</li>
-<li><p>🔴行内元素转化为行内块元素</p>
-<pre class="line-numbers language-Html" data-language="Html"><code class="language-Html">&lt;style&gt;
-    a &#123;
-        width: 150px;
-        height: 50px;
-        display: block;
-    &#125;
-    div &#123;
-        display: inline;
-    &#125;
-    span &#123;
-        width: 150px;
-        height: 30px;
-        display: inline-block;
-    &#125;
-&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>小技巧：文字垂直居中：行高<code>ling-height</code> = 盒子高度，偏小则文字偏上，偏大则文字偏下</p>
-</li>
-</ul>
-<h2 id="4-CSS的背景"><a href="#4-CSS的背景" class="headerlink" title="$4 CSS的背景"></a>$4 CSS的背景</h2><h3 id="4-1-背景颜色"><a href="#4-1-背景颜色" class="headerlink" title="$4.1 背景颜色"></a>$4.1 背景颜色</h3><p>​    <code>background-color</code>：默认为<code>transparent</code>透明，可以指定颜色，指定类型参考CSS_1的文本颜色三种类型。</p>
-<h3 id="4-2-背景图片"><a href="#4-2-背景图片" class="headerlink" title="$4.2 背景图片"></a>$4.2 背景图片</h3><p>​    <code>background-image:url() | none</code></p>
+<li><p>删除表单或者记录</p>
 <ul>
-<li>常见于Logo，一些装饰性的小图片，超大的北京图片，优点是便于控制位置</li>
+<li>删除整个表单：<code>delete from stu;</code></li>
+<li>删除指定记录：<code>delete from stu where id=1001</code></li>
 </ul>
-<h3 id="4-3-背景平铺"><a href="#4-3-背景平铺" class="headerlink" title="$4.3 背景平铺"></a>$4.3 背景平铺</h3><p>​    <code>background-repeat:no-repeat | repeat | repeat-x | repeat-y</code></p>
+</li>
+<li><p>更新记录</p>
+<p><img src="/2021/03/28/sqlite3-ji-chu-zhi-shi/sqlite_update.png" alt="更新记录"></p>
 <ul>
-<li>默认<code>repeat</code></li>
+<li><code>update stu set name=&#39;Ahui&#39;,score=94 where id=&#39;1001&#39;</code></li>
 </ul>
-<h3 id="4-4-背景图片位置"><a href="#4-4-背景图片位置" class="headerlink" title="$4.4 背景图片位置"></a>$4.4 背景图片位置</h3><p>​    <code>background-position: x y;</code> </p>
-<p>​    x和y可以使用方位名词或者精确单位</p>
+</li>
+<li><p>添加一列属性</p>
 <ul>
-<li>方位名词：<code>top</code>,<code>bottom</code>,<code>center</code>和<code>left</code>,<code>right</code>,<code>center</code><ul>
-<li>如果指定了两个，则前后顺序无关</li>
-<li>如果指定了一个，则第二个默认居中对齐</li>
+<li><code>alter table stu add column adderss char</code></li>
 </ul>
 </li>
-<li>精确单位：x坐标和y坐标，顺序固定，单位为<code>px</code><ul>
-<li>如果只指定了一个，那么该数值一定是x坐标，另一个默认垂直居中</li>
-</ul>
+<li><p>删除一列属性</p>
+<ol>
+<li>创建一个新表单：<code>create table stu_back as select id, name score from stu;</code></li>
+<li>删除旧表单：<code>drop table stu;</code></li>
+<li>将新表名改为旧表名：<code> alter table stu_back rename to stu;</code></li>
+</ol>
 </li>
-<li>混合单位：x坐标和y坐标，顺序固定<ul>
-<li>例<code>background-position: 20px bottom;</code>,<code>background-position: center 40px;</code></li>
 </ul>
-</li>
-</ul>
-<h3 id="4-5-背景图像固定"><a href="#4-5-背景图像固定" class="headerlink" title="$4.5 背景图像固定"></a>$4.5 背景图像固定</h3><p><code>background--attachment: scroll | fixed</code>，默认<code>scroll</code>，以后做滚动视差会用到</p>
-<h3 id="4-6-背景属性复合写法"><a href="#4-6-背景属性复合写法" class="headerlink" title="$4.6 背景属性复合写法"></a>$4.6 背景属性复合写法</h3><p>没有特定书写顺序，一般书写顺序：</p>
+<h3 id="2-2-系统命令"><a href="#2-2-系统命令" class="headerlink" title="$2.2 系统命令"></a>$2.2 系统命令</h3><blockquote>
+<p>系统命令均以<code>.</code>开头，且结尾不必加上分号</p>
+</blockquote>
 <ul>
-<li><p>背景颜色，背景图片，背景平铺，背景图像滚动，背景图片位置</p>
-</li>
-<li><p>例：<code>background: pink url(a.png) no-repeat fixed center top;</code></p>
-</li>
+<li><code>.quit</code>或者<code>.exit</code>：退出</li>
+<li><code>.schema [表名]</code>：查看表的结构</li>
+<li><code>.head on</code>：在显示记录时，同时显示表头</li>
+<li><code>.databases</code>：查看打开的数据库</li>
+<li><code>.table</code>：查看当前数据库下的表单</li>
 </ul>
-<h3 id="4-7-背景色半透明"><a href="#4-7-背景色半透明" class="headerlink" title="$4.7 背景色半透明"></a>$4.7 背景色半透明</h3><ul>
-<li><p><code>background: rgba(0, 0, 0, 0.3)</code>，<code>a=1</code>为不透明，</p>
-</li>
-<li><p><code>0.3</code>可以简写为<code>.3</code>，把0省略</p>
-</li>
-</ul>
-<h2 id="5-CSS三大特性"><a href="#5-CSS三大特性" class="headerlink" title="$5 CSS三大特性"></a>$5 CSS三大特性</h2><ul>
-<li>层叠性：相同的选择器设置相同的样式，此时一个样式会覆盖另一个样式，遵循就近原则(底层原则)<ul>
-<li>哪个样式离结构近，就执行哪个样式</li>
-</ul>
-</li>
-</ul>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">&#123;</span>
-	<span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
-    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-<span class="token selector">div</span> <span class="token punctuation">&#123;</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-<span class="token comment">/*最终结果：color: green，font-size: 18px;*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li><p>继承性：子类会继承父类的样式，例如根据上个代码块的样式：<code>&lt;div&gt;&lt;p&gt;我继承了div&lt;/p&gt;&lt;/div&gt;</code>，则<code>p</code>标签会有<code>color</code>和<code>font-size</code></p>
-<ul>
-<li><p>子类会继承<code>text-</code>,<code>font-</code>,<code>line</code>和<code>color</code>等</p>
-</li>
-<li><p>行高的继承：行高可以设置为<code>1.5</code>，表示当前文字大小的<code>1.5</code>倍。</p>
-</li>
-</ul>
-</li>
-<li><p>优先级： 当一个元素指定多个选择器，就会产生优先级</p>
-<ul>
-<li>选择器相同，执行层叠行</li>
-<li>选择器不同，根据<code>选择器权重</code>执行<ul>
-<li>权重由四位数字组成，不会有进位</li>
-<li>等级判断从左到右，如果某一位相同则判断下一位</li>
-<li>继承的权重为0</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="/%E9%80%89%E6%8B%A9%E5%99%A8%E6%9D%83%E9%87%8D.png"></p>
-<ul>
-<li><p>权重叠加</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
-    <span class="token comment">/*权重: 0, 0, 0, 1*/</span>
-    <span class="token selector">li</span> <span class="token punctuation">&#123;</span>
-        <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token comment">/*权重: 0, 0, 0, 2*/</span>
-    <span class="token selector">ul li</span> <span class="token punctuation">&#123;</span>
-        <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token comment">/*权重: 0, 0, 1, 1*/</span>
-   	<span class="token selector">.nav li</span> <span class="token punctuation">&#123;</span>
-        <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nav<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>哈哈<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-</li>
-</ul>
+<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h2><p>​    Sqlite3是一个简洁，方便使用的轻巧数据库，能够完成数据库的增删改查等基本操作，但是不会对输入的数据进行类型检查，所以需要自己注意。</p>
+<p>​    以上所讲的仅仅只是Sqlite3知识的一些基本使用，但是基本能够完成当作Qt，Python等接口的需要，以上</p>
+<p>​    <del>(话说更新这么晚应该没事吧，毕竟没人看)</del></p>
 
                 
             </div>
@@ -767,7 +611,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lzu-mlh.github.io/CSS-2.html">https://lzu-mlh.github.io/CSS-2.html</a>
+                    <a href="https://lzu-mlh.github.io/2021/03/28/sqlite3-ji-chu-zhi-shi/">https://lzu-mlh.github.io/2021/03/28/sqlite3-ji-chu-zhi-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -805,12 +649,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/">
-                                    <span class="chip bg-color"></span>
+                                <a href="/tags/Sqlite3/">
+                                    <span class="chip bg-color">Sqlite3</span>
                                 </a>
                             
-                                <a href="/">
-                                    <span class="chip bg-color"></span>
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                                    <span class="chip bg-color">数据库</span>
                                 </a>
                             
                         </div>
@@ -861,31 +705,31 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/CSS-2.html">
+                <a href="/2021/03/28/sqlite3-ji-chu-zhi-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="CSS_2">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Sqlite3基础知识">
                         
-                        <span class="card-title">CSS_2</span>
+                        <span class="card-title">Sqlite3基础知识</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CSS进阶知识
+                            Sqlite3的入门知识
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/" class="post-category">
-                                    
+                            <a href="/categories/Sqlite3/" class="post-category">
+                                    Sqlite3
                                 </a>
                             
                             
@@ -896,12 +740,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/">
-                        <span class="chip bg-color"></span>
+                    <a href="/tags/Sqlite3/">
+                        <span class="chip bg-color">Sqlite3</span>
                     </a>
                     
-                    <a href="/">
-                        <span class="chip bg-color"></span>
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
                     </a>
                     
                 </div>
@@ -912,50 +756,49 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/CSS-2.html">
+                <a href="/2021/02/20/javascript-ji-chu-zhi-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="CSS_2">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="JavaScript基础知识">
                         
-                        <span class="card-title">CSS_2</span>
+                        <span class="card-title">JavaScript基础知识</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            CSS进阶知识
+                            JavaScript基础知识
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/" class="post-category">
-                                    
+                            <a href="/categories/JavaScript/" class="post-category">
+                                    JavaScript
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/">
-                        <span class="chip bg-color"></span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
-                    <a href="/">
-                        <span class="chip bg-color"></span>
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
@@ -1141,7 +984,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">12.9k</span>&nbsp;字
+                class="white-color">13.5k</span>&nbsp;字
             
             
             
